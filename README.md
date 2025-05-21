@@ -1,2 +1,17 @@
-# weather-app
-a simple weather website created with bootstrap and google fonts
+# Weather App
+
+This is a simple weather app built with HTML, CSS (Bootstrap), and JavaScript.  
+It uses Google Fonts for styling and will later include a weather API.
+
+## Features
+- Responsive layout
+- Real-time weather data (coming soon)
+- Clean and modern design
+
+## Setup
+1. Clone the repo
+2. Open `index.html` in your browser
+
+## License
+MIT
+
