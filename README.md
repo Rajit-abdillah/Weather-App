@@ -5,8 +5,8 @@ It uses Google Fonts for styling and will later include a weather API.
 
 ## Features
 - Responsive layout
-- Real-time weather data (coming soon)
-- Clean and modern design
+- Real-time weather data
+- Clean basic design
 
 ## Setup
 1. Clone the repo
