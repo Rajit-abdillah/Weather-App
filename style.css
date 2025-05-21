@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    min-height: 100vh; /* ← instead of height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    font-style: normal;
+    flex-direction: column; /* Optional: stack elements vertically */
+}
+
+h1, label, p{
+    margin: 8px 0;
+    color: white;
+}
+
+#temp-div p{
+    font-size: 30px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast{
+    margin-top: 5px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.hourly-item img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading{
+    color: white;
+    margin-top: 10px;
+}
