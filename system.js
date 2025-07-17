@@ -1,5 +1,4 @@
 function getWeather() {
-  const apiKey = "YOUR-APIKEY-HERE";
   const city = document.getElementById("city").value;
 
   if (!city) {
@@ -30,11 +29,13 @@ function getWeather() {
     });
 }
 
+
 function displayWeather(data) {
   const tempDivInfo = document.getElementById("temp-div");
   const weatherInfoDiv = document.getElementById("weather-info");
   const weatherIcon = document.getElementById("weather-icon");
   const hourlyForecastDiv = document.getElementById("hourly-forecast");
+  const description = data.weather[0].description;
 
   weatherInfoDiv.innerHTML = "";
   tempDivInfo.innerHTML = "";
@@ -57,6 +58,41 @@ function displayWeather(data) {
     weatherIcon.src = iconUrl;
     weatherIcon.alt = description;
     showImage();
+  }
+
+  const mainWeather = data.weather[0].main.toLowerCase(); // e.g., "Rain", "Clear", etc.
+
+  const body = document.body;
+
+  // Reset any previously set background class
+  body.className = "";
+
+  // Set background based on weather
+  switch (mainWeather) {
+    case "clear":
+      body.classList.add("clear-bg");
+      break;
+    case "clouds":
+      body.classList.add("cloudy-bg");
+      break;
+    case "rain":
+    case "drizzle":
+      body.classList.add("rainy-bg");
+      break;
+    case "thunderstorm":
+      body.classList.add("stormy-bg");
+      break;
+    case "snow":
+      body.classList.add("snowy-bg");
+      break;
+    case "mist":
+    case "fog":
+    case "haze":
+      body.classList.add("foggy-bg");
+      break;
+    default:
+      body.classList.add("default-bg");
+      break;
   }
 }
 
@@ -84,6 +120,7 @@ function displayHourlyForecast(hourlyData) {
     hourlyForecastDiv.innerHTML += hourlyItemHtml;
   });
 }
+
 function showImage() {
   const weatherIcon = document.getElementById("weather-icon");
   weatherIcon.style.display = "block";

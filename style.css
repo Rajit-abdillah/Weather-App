@@ -7,6 +7,7 @@ body {
     background-color: darkslateblue;
     font-style: normal;
     flex-direction: column; /* Optional: stack elements vertically */
+    transition: background-image 0.5s ease-in-out;
 }
 
 h1, label, p{
@@ -56,4 +57,45 @@ h1, label, p{
 #hourly-heading{
     color: white;
     margin-top: 10px;
+}
+
+/* example styles, change background-image or color as you want */
+body.clear-bg {
+  background-image: url('./assets/sunny.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+body.cloudy-bg {
+  background-image: url('./assets/cloudy.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+body.rainy-bg {
+  background-image: url('./assets/rain.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+body.stormy-bg {
+  background-image: url('./assets/stormy.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+body.snowy-bg {
+  background-image: url('./assets/snow.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+body.foggy-bg {
+  background-image: url('./assets/fog.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+body.default-bg {
+  background-color: #444;
 }

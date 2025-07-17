@@ -11,8 +11,7 @@
 </head>
 
 <body>
-    <div class="card shadow p-4" style="width: 400px; padding: 20px; border-radius: 15px; background: #8c2a9b;
-background: linear-gradient(138deg, rgba(140, 42, 155, 1) 0%, rgba(92, 184, 187, 1) 100%);">
+    <div class="card shadow p-4" style="width: 400px; padding: 20px; border-radius: 15px; background: transparent; backdrop-filter: blur(10px);">
         <h1>Weather App | Dont forget your umbrella!</h1>
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="enter city"  id="city" >
@@ -22,6 +21,8 @@ background: linear-gradient(138deg, rgba(140, 42, 155, 1) 0%, rgba(92, 184, 187,
         <div id="temp-div"></div>
         <div id="weather-info"></div>
         <div id="hourly-forecast"></div>
+        <div class="latitude"></div>
+        <div class="longitude"></div>
     </div>
 
     <script src="system.js"></script>
