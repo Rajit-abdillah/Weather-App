@@ -1,6 +1,6 @@
 # Weather App
 
-This is a simple weather app built with HTML, CSS (Bootstrap), and JavaScript.  
+This is a simple weather app built with HTML, CSS (Bootstrap), and Typescript.  
 It uses Google Fonts for styling and will later include a weather API.
 
 ## Features
